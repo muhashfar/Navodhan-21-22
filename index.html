@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<div id="content">
+  <!-- Start header -->
+  <header class="header-nav-center no_blur header__workspace white-scroll-dark active-orange-red" id="myNavbar">
+    <div class="container">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
+        <a class="navbar-brand" href="">
+          <img class="logo" src="../../assets/img/logo-o.png" alt="logo" />
+        </a>
+
+        <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <svg viewBox="0 0 64 48">
+            <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+            <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+            <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+          </svg>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#FAQs">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Videos">Videos</a>
+            </li>
+          </ul>
+          <div class="nav_account btn_demo3">
+            <button type="button" data-toggle="modal" data-target="#mdllLogin"
+              class="btn btn_sm_primary opacity-1 sweep_letter scale sweep_top rounded-8">
+              <div class="inside_item">
+                <span data-hover="Hello !">Sign In</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </div>
+    <!-- end container -->
+  </header>
+  <!-- End header -->
+
+  <!-- Stat main -->
+  <main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <!-- Banner -->
+    {% include section-banner.html %}
+
+    <!-- Photo grid (*4 - 1200*800, 800*800)-->
+    {% include section-brief.html %}
+
+    <!-- FAQ -->
+    {% include faq.html %}
+
+    <!-- Events -->
+    {% include events.html %}
+
+    <!-- Tabs -->
+    {% include tabs.html %}
+
+    <!-- Call to Action-->
+    {% include call-to-action.html %}
+
+  </main>
+</div>
+<!-- [id] content -->
+

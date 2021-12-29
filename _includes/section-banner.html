@@ -1,0 +1,28 @@
+    <!-- Start banner_about -->
+    <section class="pt_banner_inner banner_px_image" id="Discover">
+      <div class="parallax_cover">
+        <img class="cover-parallax" src="../../assets/img/inner/about.jpg" alt="image">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-6">
+            <div class="banner_title_inner">
+              <h1 data-aos="fade-up" data-aos-delay="0">
+                {{ site.data.sitedata.title }} {{ site.data.sitedata.year }}
+              </h1>
+              <p data-aos="fade-up" data-aos-delay="100">
+                {% for tagline in site.data.sitedata.tagline %}{{ tagline }}{% unless forloop.last %} ·{% endunless %} {% endfor %}
+              </p>
+              <div data-aos="fade-up" data-aos-delay="200">
+                <a href="#" class="btn btn_sm_primary bg-orange-red c-white rounded-8">
+                    Contact Us
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End banner_about -->

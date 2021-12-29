@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata -->
+  {% include metadata.html %}
+
+  <!-- Title -->
+  <title>
+    {{ site.data.sitedata.title }} - {% for tagline in site.data.sitedata.tagline %}{{ tagline }}{% unless forloop.last %},{% endunless %} {% endfor %}
+  </title>
+  
+  <!-- favicon -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}{{ site.data.sitedata.favicon }}" type="image/x-icon" />
+  <!-- Bootstrap 4.5 -->
+
+  <!-- Stylesheet -->
+  {% include stylesheet.html %}
+
+</head>
+
+<body>
+  <div id="wrapper">
+
+      <!-- Content -->
+      {{ content }}
+
+      <!-- Footer -->
+      {% include footer.html %}
+
+      <!-- Video Modal (Pop-Ups) -->
+      {% include video-modal.html %}
+
+      <!-- Progess Bar -->
+      {% include progess-bar.html %}
+
+  </div>
+  <!-- End. wrapper -->
+
+  <!-- Scrips -->
+  {% include scripts.html %}
+
+</body>
+
+</html>

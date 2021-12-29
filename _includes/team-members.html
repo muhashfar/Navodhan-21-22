@@ -1,0 +1,47 @@
+<!-- Start team_overlay_style -->
+<section class="team_overlay_style margin-b-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="title_sections_inner margin-b-5">
+            <h2>People who work at Rakon share the vision of our community.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      {% for member in site.members %}
+        <div class="col-lg-3">
+          <div class="item_group" data-aos="fade-up" data-aos-delay="0">
+            <div class="image_ps">
+              <img src="{{ site.baseurl }}{{ member.avatar }}" alt="">
+            </div>
+            <div class="share_soisal">
+              <a href="">
+                <i class="tio instagram"></i>
+              </a>
+              <a href="">
+                <i class="tio twitter"></i>
+              </a>
+              <a href="">
+                <i class="tio messenger_outlined"></i>
+              </a>
+            </div>
+            <div class="content_txt">
+              <h3>{{ member.name }}</h3>
+              <p>{{ member.position }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+        <div class="col-lg-2 my-auto mx-auto" data-aos="fade-up" data-aos-delay="200">
+          <p class="font-s-20 c-dark font-w-600">You’ll work with creative people.</p>
+          <a href="" class="btn btn_md_primary sweep_top sweep_letter bg-orange-red c-white rounded-8">
+            <div class="inside_item">
+              <span data-hover="Welcome !">Join us now</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End. team_overlay_style -->
